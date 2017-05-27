@@ -62,6 +62,8 @@ namespace TotalyFreeCamera.Detours
                 Singleton<DistrictManager>.instance.NamesVisible = !this.m_freeCamera;
                 Singleton<PropManager>.instance.MarkersVisible = !this.m_freeCamera;
                 Singleton<GuideManager>.instance.TutorialDisabled = this.m_freeCamera;
+                Singleton<DisasterManager>.instance.MarkersVisible = !this.m_freeCamera;
+                Singleton<NetManager>.instance.RoadNamesVisible = !this.m_freeCamera;
             }
 
 
